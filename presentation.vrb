@@ -1,0 +1,12 @@
+\frametitle{commutative diagram}
+\[
+			\begin{tikzcd}
+				A \arrow[r,dash] & B \arrow[r,equal] & C \arrow[r,dotted] & D \arrow[r,dashed] & E
+			\end{tikzcd}
+		\]
+
+		\[
+			\begin{tikzcd}
+			A\arrow[r,bend left=50,""{name=F,below}]\arrow[r,bend right=50,"" name=G]\arrow[Rightarrow,from=F,to=G,"\alpha"] & B
+		\end{tikzcd}
+	\]
