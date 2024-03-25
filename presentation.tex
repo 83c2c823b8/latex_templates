@@ -1,7 +1,12 @@
-\documentclass[lualatex]{beamer}
+\documentclass[unicode]{beamer}
 \usetheme{Copenhagen}
+\usepackage{luatexja}% japanese
+\usepackage[ipaex]{luatexja-preset}% IPAex font
 \usecolortheme[RGB={0,100,125}]{structure}
-\title{Usage of beamer}
+\usefonttheme{professionalfonts} %font of mathematical formula
+\usepackage{mlmodern}%thick math font 
+
+\title{タリラリランのコニャニャチワ}
 \subtitle{tarirariran}
 \author{sanbon}
 \institute{chuo junior high school}
@@ -10,14 +15,23 @@
 	\begin{frame}{how to use beamer}
 		\titlepage
 	\end{frame}
-
+	
 	\begin{frame}{hello}
-		\begin{block}{good be}
-			We should use prank unit
+		\begin{block}{block}
+			This environment is block
 		\end{block}
+
+		\begin{alertblock}{alertblock}
+			This environment is alertblock
+		\end{alertblock}
+
+		\begin{exampleblock}{exampleblock}
+			This environment is exampleblock
+		\end{exampleblock}
 	\end{frame}
 
 	\begin{frame}
+	\[ \int^\infty_{-\infty}\frac{1}{\sqrt{2\pi}}e^{-\frac{x^2}{2}} dx \]
 		\frametitle{frametitle}
 		text
 	\end{frame}
