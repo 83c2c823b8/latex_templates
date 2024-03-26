@@ -1,12 +1,7 @@
-\frametitle{commutative diagram}
+\frametitle{five lemma}
 \[
-			\begin{tikzcd}
-				A \arrow[r,dash] & B \arrow[r,equal] & C \arrow[r,dotted] & D \arrow[r,dashed] & E
-			\end{tikzcd}
+				\begin{tikzcd}
+					M_1 \arrow[r,"f_1"]\arrow[d,two heads,"h_1"] & M_2 \arrow[r,"f_2"]\arrow[d,hook,"h_2"] & M_3 \arrow[r,"f_3"]\arrow[d,"h_3"] & M_4\arrow[r,"f_4"]\arrow[d,hook,"h_4"] & M_5 \arrow[d,"h_5"]\\
+					N_1 \arrow[r,"g_1"] & N_2 \arrow[r,"g_2"] & N_3 \arrow[r,"g_3"] & N_4\arrow[r,"g_4"] & N_5 \\
+				\end{tikzcd}
 		\]
-
-		\[
-			\begin{tikzcd}
-			A\arrow[r,bend left=50,""{name=F,below}]\arrow[r,bend right=50,"" name=G]\arrow[Rightarrow,from=F,to=G,"\alpha"] & B
-		\end{tikzcd}
-	\]
