@@ -3,4 +3,9 @@
 *.vrb
 *.aux
 *.un~
-
+*.fls
+*.fdb_latexmk
+*.log
+*.out
+*.toc
+*.swp
