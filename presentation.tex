@@ -6,6 +6,8 @@
 \usecolortheme[RGB={15,95,125}]{structure}
 \usefonttheme{professionalfonts} %font of mathematical formula
 \usepackage{mlmodern}%thick math font 
+\DeclareMathOperator{\Ker}{Ker}
+\DeclareMathOperator{\coker}{Coker}
 
 \title{タリラリランのコニャニャチワ}
 \subtitle{tarirariran}
@@ -32,7 +34,7 @@
 	\end{frame}
 
 	\begin{frame}{mathematical formula}
-	\[ \int^\infty_{-\infty}\frac{1}{\sqrt{2\pi}}e^{-\frac{x^2}{2}} dx \]
+	\[ \frac{1}{\sqrt{2\pi}}\int^\infty_{-\infty}e^{-\frac{x^2}{2}} dx \]
 	\end{frame}
 
 	\begin{frame}[fragile]{tikz}
@@ -71,5 +73,17 @@
 				\end{tikzcd}
 		\]
 		Let $x$ be an element of $\ker h_3$. If $x=0$,then $h_3$ is injective.
+	\end{frame}
+	\begin{frame}[fragile]{}
+		\begin{block}{snake lemma}
+			\[ 
+				\begin{tikzcd}
+					&\Ker h_1 \arrow[r,"\bar f_1"]\arrow[d,hook] & \Ker h_2 \arrow[r,"\bar f_2"] \arrow[d,hook]& \Ker h_3\arrow[d,hook]\\
+					 & M_1 \arrow[r,"f_1"]\arrow[d,"h_1"] & M_2 \arrow[r,"f_2"]\arrow[d,"h_2"] & M_3\arrow[r]\arrow[d,"h_3"] &  0\\
+					0 \arrow[r] & N_1 \arrow[r,"g_1"]\arrow[d,two heads] & N_2 \arrow[r,"g_2"]\arrow[d,two heads]& N_3\arrow[d,two heads] &  \\
+						&\coker h_1 \arrow[r,"\bar g_1"] & \coker h_2 \arrow[r,"\bar g_2"] & \coker h_3
+				\end{tikzcd}
+		\]
+		\end{block}
 	\end{frame}
 \end{document}
